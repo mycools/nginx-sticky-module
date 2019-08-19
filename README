@@ -37,6 +37,12 @@ Installation
 	make
 	make install
 
+Installation Dynamic Module
+
+	./configure --with-compat --add-dynamic-module=../nginx-sticky-module-ng
+	make modules
+	cp objs/ngx_http_sticky_module.so /etc/nginx/modules/
+
 Usage
 	upstream {
 		sticky;
